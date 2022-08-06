@@ -78,14 +78,15 @@ vector<int> insertion_sort(const vector<int>& nums) {
     result.push_back(nums[0]);
 
     for (size_t i = 1; i < nums.size(); ++i) {
+        int key = nums[i];
         size_t k = 0;
-        while (k < result.size() && nums[i] >= result[k]) {
+        while (k < result.size() && key >= result[k]) {
             k++;
         }
         if (k >= result.size()) {
-            result.push_back(nums[i]);
+            result.push_back(key);
         } else {
-            result.insert(result.begin() + k, nums[i]);
+            result.insert(result.begin() + k, key);
         }
     }
     return result;
