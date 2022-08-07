@@ -13,6 +13,7 @@ BIN_DIR = 'bin'
 # 排序
 RANKING_ALGO = (
     'insertion_sort',
+    'merge_sort'
 )
 
 
