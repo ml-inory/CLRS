@@ -12,8 +12,9 @@ plt.rcParams["axes.unicode_minus"]=False
 BIN_DIR = 'bin'
 # 排序
 RANKING_ALGO = (
-    'insertion_sort',
-    'merge_sort'
+    # 'insertion_sort',
+    # 'merge_sort',
+    'bubble_sort',
 )
 
 
