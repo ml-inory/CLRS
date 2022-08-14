@@ -33,7 +33,7 @@ std::vector<int> generate_random_numbers(int N) {
 
     srand(time(NULL));
     for (size_t i = 0; i < N; ++i) {
-        result[i] = (rand() % 20) - N / 4;
+        result[i] = (rand() % (2 * N)) ;
     }
     return result;
 }
